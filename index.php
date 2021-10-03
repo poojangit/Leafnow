@@ -3,9 +3,7 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
-
   
-
 
 	$user_data = check_login($con);
 
@@ -487,6 +485,58 @@ color: red;
   </div>
 
 
+</div>
+
+<div class="donate">
+<!-- 1st charity container -->
+<div class="charity">
+<a href=""><img src="Plant.jpg"></a>
+<form action="Donate.html" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(1); ?>">
+<input type="submit" value="Donate Rs.1" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(1); ?>');" class="show2">any amount</a>.</p>
+</div>
+<!-- 2nd charity container -->
+<div class="charity">
+<a href=""><img src="Plant.jpg"></a>
+<form action="Donate.html" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(2); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(2); ?>');">any amount</a>.</p>
+</div>
+<!-- 3rd charity container -->
+<div class="charity">
+<a href=""><img src="Plant.jpg"></a>
+<form action="Donate.html" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(3); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(3); ?>');">any amount</a>.</p>
+</div>
+<!-- 4th charity container -->
+<div class="charity">
+<a href=""><img src="Plant.jpg"></a>
+<form action="Donate.html" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(4); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(4); ?>');">any amount</a>.</p>
+</div>
+</div>
+</div>
+<img id="Thank" style="width: 100%;" src="Thanku.jpg">
+</div>
+<div id="pop2" class="simplePopup">
+<h3>Donate and start helping today!</h3>
+<form action="Donate.html" method="POST">
+<img src="images/donate.jpg">
+<br/>
+<b>$</b><input type="hidden" name="id" id='charity_id' value=''>
+<input type="number" value="" name="amount" required="required" step=".1">
+<input type="submit" value="Donate Now" name="submit">
+</form>
 </div>
 
 <div class="chat-popup" id="myForm">
