@@ -493,7 +493,7 @@ color: red;
 <a href=""><img src="Plant.jpg"></a>
 <form action="Donate.html" method="POST">
 <input type="hidden" name="id" value="<?php echo base64_encode(1); ?>">
-<input type="submit" value="Donate Rs.1" name="submit">
+<input type="submit" value="Donate ₹1" name="submit">
 </form>
 <p>Or give <a href="#" onclick="show('<?php echo base64_encode(1); ?>');" class="show2">any amount</a>.</p>
 </div>
@@ -502,7 +502,7 @@ color: red;
 <a href=""><img src="Plant.jpg"></a>
 <form action="Donate.html" method="POST">
 <input type="hidden" name="id" value="<?php echo base64_encode(2); ?>">
-<input type="submit" value="Donate $25" name="submit">
+<input type="submit" value="Donate ₹10" name="submit">
 </form>
 <p>Or give <a href="#" onclick="show('<?php echo base64_encode(2); ?>');">any amount</a>.</p>
 </div>
@@ -511,7 +511,7 @@ color: red;
 <a href=""><img src="Plant.jpg"></a>
 <form action="Donate.html" method="POST">
 <input type="hidden" name="id" value="<?php echo base64_encode(3); ?>">
-<input type="submit" value="Donate $25" name="submit">
+<input type="submit" value="Donate ₹100" name="submit">
 </form>
 <p>Or give <a href="#" onclick="show('<?php echo base64_encode(3); ?>');">any amount</a>.</p>
 </div>
@@ -520,7 +520,7 @@ color: red;
 <a href=""><img src="Plant.jpg"></a>
 <form action="Donate.html" method="POST">
 <input type="hidden" name="id" value="<?php echo base64_encode(4); ?>">
-<input type="submit" value="Donate $25" name="submit">
+<input type="submit" value="Donate ₹500" name="submit">
 </form>
 <p>Or give <a href="#" onclick="show('<?php echo base64_encode(4); ?>');">any amount</a>.</p>
 </div>
